@@ -22,6 +22,4 @@ triangle;
 - use the mouse to draw three different shapes (i.e., circle, rectangle, and triangle) after clicking the “draw” button;
 - use the mouse to select the drawn shapes and move them from one position to another after clicking the “move” button;
 - remove all shapes after clicking the “reset” button.
-<img width="1213" alt="mainPage2" src="https://user-images.githubusercontent.com/106254945/196858470-14607322-4d92-43ca-9d42-c04dabaa87ce.png">
-
-
+<img width="1218" alt="mainPage2" src="https://user-images.githubusercontent.com/106254945/196858981-f5f723ab-8ef7-4d4f-816f-ce3adb1ace43.png">
