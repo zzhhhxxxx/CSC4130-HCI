@@ -1,0 +1,176 @@
+/* stylize at least text and range slider in HTML (10pts)
+ */
+ h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 9px;
+    width: 1200px;
+ }
+ body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:#333333;
+    font-size: 15px;
+    width: 1200px;
+}
+b {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 9px 243px;
+    background-color: #333333;
+    color:#ffffff;
+    width: 1200px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+#colors {
+    padding-left: 13px;
+    height: 280px;
+  }
+
+#buttons{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color:#333333;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+   
+}
+#buttons:hover{
+    background-color: #333333;
+    color:#ffffff;
+}
+#buttons:active{
+    background-color: #333333;
+    color:#ffffff;
+    transform:translateY(1px);
+}
+
+
+
+input[type="color"] {
+    width: 69px;
+    height: 40px;
+    margin:auto;
+    border: 2px solid#333333;
+    -webkit-appearance: none;
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    margin: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 2px;
+}
+
+
+fieldset {
+    border: 2px solid#333333;
+    padding: 12px;
+    line-height: 15px;
+}
+legend{
+    margin: auto;
+    color:#333333;
+}
+
+
+#first {
+    line-height: 30px;
+    width: 500px;
+    float:left;
+    height: 68px;
+    
+}
+#second {
+    width: 500px;
+    float:right;
+    height: 60px;
+    margin-top: 6px;
+    
+}
+
+#third {
+    width: 1170px;
+    height: 80px;
+    margin:auto;
+    margin-bottom: 8px;
+}
+
+select {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 2px solid #333333;
+    
+}
+
+
+
+#sliderInput{
+    line-height: 15px;
+    margin:auto;
+    font-weight: bold;
+}
+
+
+input[type="range"]{
+    width:200px;
+    height:16px;
+    outline: none;
+    background:none;
+}
+    
+input[type="range"]::-moz-range-track{
+    height:4px;
+    background:rgb(230, 230, 230);
+    border:none;
+}
+    
+input[type="range"]::-moz-range-thumb{ 
+    width:10px; 
+    height:10px;
+    background:#555555;
+    border:none;
+    border-radius:50%;
+}
+    
+input[type="range"]::-moz-range-thumb:hover,input[type="range"]:active::-moz-range-thumb{
+    width:16px;
+    height:16px;
+}
+    
+input[type="range"]::-moz-range-progress{
+    height:4px;
+    background:#555555;
+}
+    
+input[type="range"]::-moz-focus-outer{
+    border:none; /* 去除 focus 时候的外框虚线 */
+}
+ 
+        
+

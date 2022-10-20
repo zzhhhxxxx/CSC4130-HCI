@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=index.css>
+    <title>
+        Assignment 2 - Zhao Huixuan
+    </title>
+      
+    <style>
+        
+    </style>
+</head>
+  
+<body>
+    <h1>CSC4130 Assignment 2 - Zhao Huixuan</h1>
+    <b>draw, move, and reset different shapes</b>
+    <hr>
+    <div>
+    <canvas id="canvas" width="1200" height="400" style="border:2px solid #333333;margin: 0 auto;">
+        浏览器不支持canvas
+    </canvas>
+    </div>
+    <p> </p>
+
+    
+
+
+
+    
+    <input type="button" value="draw" id = "buttons" onclick="use_tool('draw');">
+    <input type="button" value="move" id = "buttons" onclick="use_tool('move');">
+    <input type="button" value="reset" id = "buttons" onclick="use_tool('reset');"></br>
+    <!-- define a color menu and show the corresponding hex value (8pts)-->
+    <!-- your code is here -->
+
+    <p></p>
+    <fieldset id = "third">
+        <legend>Change the Color:</legend>
+    <input type="color" name="color" id="favcolor" value="#7cd3ff" onchange="changeColors()">
+    <p>Color Value: <span id="colorVal"></span></p>
+
+    </fieldset>
+
+
+
+    <!-- define a drop-down list with three options for drawing circle, rectangle, and triangle (6pts)-->
+    <!-- your code is here -->
+    
+    <fieldset id = "first">
+        <legend>Change the Shape:</legend>
+            <div class="dropdown">
+                <select name="shape" id="selshape">
+                    <div class="dropdown-content">
+                    <option value="rect" onclick="select_shape('Rect');">Rectangle</option>
+                    <option value="circ" onclick="select_shape('Circle');">Circle</option>
+                    <option value="tria" onclick="select_shape('Triangle');">Triangle</option>
+                  </select>
+            </div>
+
+
+    </fieldset>
+
+    <!--
+    <fieldset id = "first">
+        <legend>Change the Shape:</legend>
+            <div class="colors">
+                <view class="palette red" id="rect" onclick="select_shape('Rect');">
+                    <input type="radio" id="rect" name="shape">
+                    <label for="rect">Rectangle</label>
+                </view>
+                <view class="palette blue" id="circle" onclick="select_shape('Circle');">
+                    <input type="radio" id="circle" name="shape">
+                    <label for="circle">Circle</label>
+                </view>
+                <view class="palette green" id="triangle" onclick="select_shape('Triangle');">
+                    <input type="radio" id="triangle" name="shape">
+                    <label for="triangle">Triangle</label>
+                </view>
+            </div>
+    </fieldset>
+    -->
+
+
+    <fieldset id = "second">
+        <legend>Change the Opacity:</legend>
+        <input type="range" min="0" max="1" value="1" step = "0.1" class="slider" id="opacity" name='opacity' onchange="changeOpacity()">
+        <p>Value: <span id="value"></span></p>
+    </fieldset>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.4.0/fabric.min.js"></script> 
+    <script src="src/index.js"></script>
+</body>
+  
+</html>
